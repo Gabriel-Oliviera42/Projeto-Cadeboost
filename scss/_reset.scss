@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
 }
 
 img {
@@ -21,5 +22,26 @@ button {
 }
 
 body {
-    background-color: var(--BLACK-PRIMARY);
+    background-color: var(--WHITE);
+    color: var(--BLACK-PRIMARY);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Road Rage", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--BLACK-PRIMARY);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
 }
