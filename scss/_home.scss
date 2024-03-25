@@ -89,6 +89,63 @@
             right: -36rem;
         }
     }
+    @media(max-width: 1200px) {
+        height: 82.3rem;
+        .left-text {
+            padding-top: 20rem;
+            max-width: 53.8rem;
+        }
+        .ilustra {
+            right: -25rem;
+            max-width: 700px;
+        }
+    }
+    @media(max-width: 991px) {
+        height: auto;
+        padding-bottom: 6rem;
+        .left-text {
+            padding-top: 18rem;
+            max-width: 100%;
+            .users {
+                margin-top: 52.5rem;
+            }
+        }
+        .ilustra {
+            right: -18rem;
+        }
+    }
+    @media(max-width: 560px) {
+        .left-text {
+            padding-top: 14rem;
+            text-align: center;
+            .title {
+                margin-bottom: 3rem;
+                h1 {
+                    font-size: 7.3rem;
+                }
+                img {
+                    margin-top: -1rem;
+                    max-width: 100%;
+                }
+            }
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 3.3rem;
+            }
+            button {
+                margin: 0 auto;
+            }
+            .users {
+                margin-top: 26.5rem;
+                justify-content: center;
+            }
+        }
+        .ilustra {
+            right: -11rem;
+            bottom: 15rem;
+            max-width: 30.4rem;
+        }
+    }
 }
 
 
@@ -157,6 +214,59 @@
                         line-height: 0.7;
                     }
                 }
+            }
+        }
+    }
+    @media (max-width:991px) {
+        padding-bottom: 4rem;
+        .box {
+            height: auto;
+            .content {
+                justify-content: center;
+                padding-right: 0;
+                padding: 4rem 0;
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    li {
+                        width: 100%;
+                        &:first-child {
+                            padding-left: 2.1rem;
+                        }
+                        &:last-child {
+                            padding-right: 2.1rem;
+                        }
+                        &:not(:first-child) {
+                            border-left: none;
+                            border-top: 1px solid rgba(255, 255, 255, 0.4);
+                        }
+                    }
+                }
+            }
+            .ilustra {
+                top: -6.4rem;
+                left: -1rem;
+            }
+        }
+    }
+    @media (max-width:560px) {
+        p {
+            font-size: 1.3rem;
+        }
+        .box {
+            .content {
+                ul {
+                    li {
+                        h3 {
+                            font-size: 8rem;
+                        }
+                    }
+                }
+            }
+            .ilustra {
+                top: -9.4rem;
+                left: -1rem;
+                max-width: 121px;
             }
         }
     }
@@ -249,6 +359,72 @@
         margin-left: -13.3rem;
         bottom: -2.4rem;
     }
+    @media(max-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+        .container {
+            align-items: center;
+            flex-direction: column-reverse;
+            gap: 6rem;
+        }
+        .left {
+            margin-bottom: 0;
+        }
+        .right {
+            flex: initial;
+            width: 100%;
+            max-width: 56.9rem;
+        }
+    }
+    @media(max-width: 560px) {
+        .left {
+            h2 {
+                left: -6.9rem;
+                bottom: initial;
+                top: -22.5rem;
+                z-index: 10;
+                font-size: 63px;
+            }
+            ul {
+                li {
+                    h3 {
+                        font-size: 1.4rem;
+                    }
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        .right {
+            max-width: 27.3rem;
+            height: 28.3rem;
+            left: 2rem;
+            img {
+                &.one {
+                    max-width: 12.3rem;
+                    left: 0;
+                    top: 1.1rem;
+                }
+                &.two {
+                    max-width: 14.9rem;
+                    top: 0;
+                    right: 2.5rem;
+                }
+                &.three {
+                    max-width: 9.6rem;
+                    bottom: 3.4rem;
+                    left: 6.1rem;
+                }
+            }
+            .shadow {
+                height: 11.1rem;
+            }
+        }
+        .bnt-primary {
+            margin-left: -9.4rem;
+        }
+    }
 }
 
 .s-stories {
@@ -302,6 +478,76 @@
             position: absolute;
             bottom: -33rem;
             right: 2.2rem;
+        }
+    }
+    @media(max-width: 1200px) {
+        padding: 10rem 0;
+        .title {
+            h2 {
+                font-size: 31rem;
+            }
+        }
+        .text {
+            margin-top: -17rem;
+            .arrow {
+                bottom: -20rem;
+                right: 8.2rem;
+                max-width: 30rem;
+            }
+        }
+    }
+    @media(max-width: 991px) {
+        .title {
+            h2 {
+                font-size: 22rem;
+                letter-spacing: 14.54px;
+            }
+        }
+        .text {
+            flex-direction: column;
+            align-items: center;
+            margin-top: -14rem;
+            .description {
+                padding-bottom: 0;
+                max-width: 90%;
+                text-align: center;
+            }
+            .arrow {
+                bottom: -30rem;
+                right: 11.2rem;
+                max-width: 25rem;
+            }
+        }
+    }
+    @media(max-width: 560px) {
+        .title {
+            h4 {
+                font-size: 1.6rem;
+                margin-bottom: 1.4rem;
+            }
+            h2 {
+                font-size: 14rem;
+                letter-spacing: 5.58px;
+            }
+        }
+        .text {
+            margin-top: -9rem;
+            gap: 3.4rem;
+            .ilustra {
+                max-width: 24.4rem;
+            }
+            .description {
+                max-width: 100%;
+                p {
+                    font-size: 1.3rem;
+                    text-align: left;
+                }
+            }
+            .arrow {
+                right: 6.2rem;
+                max-width: 17.6rem;
+                bottom: -21rem;
+            }
         }
     }
 }
@@ -406,6 +652,46 @@
             }
         }
     }
+    @media(max-width: 1200px) {
+        .all {
+            .card-sticker {
+                .content {
+                    .info {
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 991px) {
+        .all {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media(max-width: 560px) {
+        padding-bottom: 4rem;
+        .title {
+            max-width: 36.1rem;
+            margin-bottom: 14.8rem;
+            h2 {
+                font-size: 11rem;
+                letter-spacing: 5.6px;
+                justify-content: center;
+                img {
+                    right: 10.3rem;
+                    max-width: 6.2rem;
+                }
+            }
+            .subtitle {
+                left: 0.9rem;
+            }
+        }
+        .all {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
 .s-world {
@@ -466,11 +752,105 @@
             right: 0;
         }
         &.coruja {
-            bottom: 71px;
+            bottom: 38px;
             right: 0;
         }
     }
     @media(min-width: 1441px) {
         background-size: cover;
+    }
+    @media(max-width: 1200px) {
+        .title {
+            h2 {
+                font-size: 32.1rem;
+                font-weight: 400;
+                line-height: .7;
+                letter-spacing: 25.41px;
+            }
+        }
+        .ilustra {
+            &.gaviao {
+                max-width: 20rem;
+            }
+            &.tigre{
+                max-width: 25rem;
+            }
+            &.pouvo {
+                max-width: 20rem;
+            }
+            &.coruja {
+                max-width: 24rem;
+            }
+        }
+    }
+    @media(max-width: 991px) {
+        .title {
+            h2 {
+                font-size: 23.1rem;
+                letter-spacing: 9.41px;
+            }
+        }
+        p {
+            max-width: 40rem;
+        }
+        .ilustra {
+            &.gaviao {
+                max-width: 15rem;
+            }
+            &.tigre{
+                max-width: 21rem;
+            }
+            &.pouvo {
+                max-width: 14rem;
+            }
+            &.coruja {
+                max-width: 19rem;
+            }
+        }
+    }
+    @media(max-width: 560px) {
+        padding-top: 4rem;
+        padding-bottom: 49rem;
+        .ilustra {
+            &.gaviao {
+                max-width: 16.4rem;
+                top: initial;
+                left: -2.5rem;
+                bottom: 13.5rem;
+            }
+            &.tigre{
+                max-width: 17.5rem;
+                bottom: 0;
+                left: 0;
+            }
+            &.pouvo {
+                max-width: 14.9rem;
+                top: initial;
+                bottom: 12.1rem;
+                right: 0;
+            }
+            &.coruja {
+                max-width: 16.8rem;
+                bottom: -0.3rem;
+                right: 0;
+            }
+        }
+        .title {
+            margin-bottom: 2.7rem;
+            h2 {
+                font-size: 14.1rem;
+                letter-spacing: 5.41px;
+                margin-bottom: 1rem;
+                span {
+                    font-size: 2rem;
+                    letter-spacing: 4.6px;
+                }
+            }
+        }
+        p {
+            font-size: 1.3rem;
+            max-width: 100%;
+            margin-bottom: 2.7rem;
+        }
     }
 }
