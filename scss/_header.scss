@@ -1,10 +1,16 @@
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
     padding: 4.7rem 0;
+    transition: all .3s ease;
+    &.fixed {
+        background-color: #FFF;
+        padding: 2rem 0;
+        box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+    }
     .container {
         display: flex;
         align-items: center;
@@ -45,6 +51,12 @@ header {
         display: flex;
         align-items: center;
         gap: 3rem;
+        transition: opacity .3s ease;
+        button {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
     @media(max-width: 560px) {
         padding: 3rem 0;
